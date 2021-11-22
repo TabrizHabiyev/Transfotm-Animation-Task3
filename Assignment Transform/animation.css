@@ -1,0 +1,63 @@
+body
+{
+margin: 0; padding: 0; 
+background: black;
+overflow: hidden;
+}
+.container
+{
+    margin-left: 50%;
+    animation-name: cable-animation;
+    animation-duration: 5s; 
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+hr
+{
+margin: 0px;
+padding: 0px;
+}
+.cable
+{
+    width: 3px;
+    height: 200px;
+    background-color: rgb(76, 47, 236);
+}
+.lamp
+{
+    width: 100px;
+    height: 110px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.lamp-a
+{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(223, 211, 211);
+    margin-bottom: 0px;;
+}
+.lamp-b
+{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(235, 226, 226);
+}
+@keyframes cable-animation {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    25% 
+    {
+    transform: rotate(50deg);
+    }
+    50% 
+    {
+    transform: rotate(-50deg);
+    }
+}
+
